@@ -1,0 +1,41 @@
+﻿  main.cpp
+C:\Dev\Flappy-Turkey\Flappy Turkey\External\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file 'main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept(100,30):
+      see declaration of 'std::runtime_error'
+      C:\Dev\Flappy-Turkey\Flappy Turkey\External\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(38,30): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(38,30): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(38,30): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(38,30): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(38,30): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(38,27): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(38,27): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(38,27): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(38,27): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(38,27): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(123,100): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(123,100): warning C4244:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(123,100): warning C4244:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(123,100): warning C4244:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(123,100): warning C4244:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(142,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(142,52): warning C4244:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(142,52): warning C4244:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(142,52): warning C4244:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(142,52): warning C4244:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(143,32): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(143,32): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(143,32): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(143,32): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(143,32): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(143,29): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(143,29): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(143,29): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(143,29): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(143,29): warning C4305:         ]
+  Flappy Turkey.vcxproj -> C:\Dev\Flappy-Turkey\Flappy Turkey\x64\Debug\Flappy Turkey.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

@@ -1,32 +1,13 @@
-# Prerequisites
-*.d
+# Ignore build directory
+build/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
 
-# Precompiled Headers
-*.gch
-*.pch
+# Ignore Visual Studio project files
+*.vcxproj
+*.sln
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Ignore MacOS generated files
+.DS_Store
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+#ignooore
+.vs
