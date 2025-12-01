@@ -48,6 +48,16 @@ int main()
     background.setScale({ .8,.8 });
 
 
+    sf::Texture ground;
+    if (!ground.loadFromFile("ground_2.png")) {
+        return -1;
+    }
+    ground.setSmooth(true);
+    sf::Sprite movingGround(ground);
+    movingGround.setPosition({ 0,10 });
+    movingGround.setScale({ 2.2,2.2 });
+    std::vector<sf::Sprite> movingGrounds = { movingGround };
+
     if (!pumpkin.loadFromFile("pumpkin.png")) {
         return -1;
     }
@@ -105,8 +115,20 @@ int main()
         window.draw(background);
         window.draw(score);
         
+        time = clock.restart().asSeconds();  // time since last frame
+        if (movingGrounds[movingGrounds.size()-1].getPosition().x < -80) {
+            sf::Sprite tempGround(ground);
+            tempGround.setPosition({ 1170,10 });
+            tempGround.setScale({ 2.2, 2.2 });
+            movingGrounds.push_back(tempGround);
+        }
+        for (auto& low : movingGrounds) {
+            low.move({ -30 * time, 0 });
+            window.draw(low);
 
-        if (turkContact) {
+        }
+
+        if (turkContact) { 
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::R)) {
                 turkScore = 0;
                 score.setString(std::to_string(turkScore));
@@ -198,7 +220,7 @@ int main()
             }
         }
 
-        time = clock.restart().asSeconds();  // time since last frame
+        //time = clock.restart().asSeconds();  // time since last frame
 
         if (jumpTime.getElapsedTime().asSeconds() >= JUMP_COOLDOWN && sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)) {
             TURKEY_ACCEL = VEL_BOOST / time; // a = delta v / delta t
@@ -230,6 +252,10 @@ int main()
         turkSprite.setPosition(sf::Vector2f( 170.f, turkSprite.getPosition().y + TURKEY_VEL * time + .5*TURKEY_ACCEL*(time*time))); // x = x + v + .5at^2
         window.draw(turkSprite);
         // end the current frame
+
+
+        
+
         window.display();
     }
 }
