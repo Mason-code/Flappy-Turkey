@@ -1,3 +1,5 @@
+// pumpkin column generator is faulty
+
 #include <iostream>
 #include <vector>
 #include <SFML/Audio.hpp>
@@ -12,8 +14,16 @@ int main()
     // create the window
     sf::RenderWindow window(sf::VideoMode({ 800, 800 }), "Flappy Turkey");
 
+    int turkScore = 0;
+    sf::Font minecraftia_font("Minecraftia_Regular.ttf");
+    sf::Text score(minecraftia_font);
+    score.setString(std::to_string(turkScore));
+    score.setCharacterSize(75);
+    score.setOutlineThickness(2.f);
+    score.setPosition(sf::Vector2f(400 - 20, 100));
 
-    std::vector<sf::Sprite> resetPumpStack();
+
+    std::vector<sf::Sprite> resetPumpStack(int startingXPos);
     int randomVal(int low, int high);
 
 
@@ -43,23 +53,25 @@ int main()
     }
     pumpkin.setSmooth(true);
     sf::Sprite obstacle(pumpkin);
-    //obstacle.setPosition({ 0,0 });
-    //obstacle.setScale({ .8,.8 });
 
-    std::vector<sf::Sprite> obstacleStack = resetPumpStack();
+
+    std::vector<sf::Sprite> obstacleStack = resetPumpStack(780);
     int stackLow = randomVal(1, 6);
     int stackHigh = stackLow + randomVal(3, 4);
 
   
-    std::vector<sf::Sprite> tempObstacleStack;
-
+    std::vector<sf::Sprite> tempObstacleStack = resetPumpStack(1250);
+    int stackLowT = randomVal(1, 6);
+    int stackHighT = stackLow + randomVal(3, 4);
 
     sf::Clock jumpTime;
     sf::Clock clock;
     sf::Clock pumpkinClock;
+    sf::Clock tempPumpkinClock;
 
     float time;
     float obsticle_dt;
+    float obsticleT_dt;
 
     float GRAVITY = 2000.f;
     float TURKEY_ACCEL = 0.f;
@@ -70,6 +82,12 @@ int main()
     const float JUMP_COOLDOWN = 0.f;
 
     float birdRotation = 0.f;
+
+    bool turkContact = false;
+
+    bool check = false;
+    bool checkT = false;
+    std::cout << "Press 'R' to reset when you lose" << std::endl;
 
     // run the program as long as the window is open
     while (window.isOpen())
@@ -82,20 +100,101 @@ int main()
                 window.close();
         }
 
-
+        
         window.clear(sf::Color::Black);
         window.draw(background);
+        window.draw(score);
+        
+
+        if (turkContact) {
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::R)) {
+                turkScore = 0;
+                score.setString(std::to_string(turkScore));
+
+
+                obstacleStack = resetPumpStack(780);
+                stackLow = randomVal(1, 6);
+                stackHigh = stackLow + randomVal(3, 4);
+
+
+                tempObstacleStack = resetPumpStack(1250);
+                stackLowT = randomVal(1, 6);
+                stackHighT = stackLow + randomVal(3, 4);
+
+                jumpTime.restart();
+                clock.restart();
+                pumpkinClock.restart();
+                tempPumpkinClock.restart();
+
+                time = 0.f;
+                obsticle_dt = 0.f;;
+                obsticleT_dt = 0.f;;
+
+                GRAVITY = 2000.f;
+                TURKEY_ACCEL = 0.f;
+                TURKEY_VEL = 0.f;
+                VEL_BOOST = -280.0f;
+
+                birdRotation = 0.f;
+                check = false;
+                checkT = false;
+                turkSprite.setPosition({ 170,280 });
+                window.display();
+                turkContact = false;
+
+                
+
+            }
+
+            continue;
+        }
+
+
+
         obsticle_dt = pumpkinClock.restart().asSeconds();
-        if (obstacleStack[0].getPosition().x <= 0) {
-            obstacleStack = resetPumpStack();
-            resetPumpStack();
+        if (obstacleStack[0].getPosition().x <= -130) {
+            obstacleStack = resetPumpStack(780);
             stackLow = randomVal(1, 6);
             stackHigh = stackLow + randomVal(3, 4);
+            check = false;
         }
+
+        if (!check && obstacleStack[0].getPosition().x <= 150) {
+            turkScore++;
+            score.setString(std::to_string(turkScore));
+            check = true;
+        }
+
         for (int p = 0; p < obstacleStack.size();p++) {
             if (p > stackHigh || p < stackLow) {
+                if (turkSprite.getGlobalBounds().contains(obstacleStack[p].getGlobalBounds().getCenter())) {
+                    turkContact = true;
+                }
                 obstacleStack[p].move({-195 * obsticle_dt, 0});
                 window.draw(obstacleStack[p]);
+            }
+        }
+
+        obsticleT_dt = tempPumpkinClock.restart().asSeconds();
+        if (tempObstacleStack[0].getPosition().x <= -130) {
+            tempObstacleStack = resetPumpStack(780);
+            stackLowT = randomVal(1, 6);
+            stackHighT = stackLowT + randomVal(3, 4);
+            checkT = false;
+        }
+        if (!checkT && tempObstacleStack[0].getPosition().x <= 150) {
+            turkScore++;
+            score.setString(std::to_string(turkScore));
+            checkT = true;
+
+        }
+        for (int o = 0; o < tempObstacleStack.size();o++) {
+            if (o > stackHighT || o < stackLowT) {
+                if (turkSprite.getGlobalBounds().contains(tempObstacleStack[o].getGlobalBounds().getCenter())) {
+                    turkContact = true;
+                }
+                tempObstacleStack[o].move({ -195 * obsticleT_dt, 0 });
+                window.draw(tempObstacleStack[o]);
             }
         }
 
@@ -120,6 +219,14 @@ int main()
         if (birdRotation > 45) birdRotation = 45;
         turkSprite.setRotation(sf::degrees(-birdRotation));
 
+        if (turkSprite.getPosition().y < 4) {
+            turkSprite.setPosition(sf::Vector2f(170.f, 20));
+        }
+        if (turkSprite.getPosition().y > 800 - 60) {
+            TURKEY_VEL = 0;
+            turkSprite.setPosition(sf::Vector2f(170.f, 800 - 60));
+            birdRotation = 0;
+        }
         turkSprite.setPosition(sf::Vector2f( 170.f, turkSprite.getPosition().y + TURKEY_VEL * time + .5*TURKEY_ACCEL*(time*time))); // x = x + v + .5at^2
         window.draw(turkSprite);
         // end the current frame
@@ -135,11 +242,11 @@ int randomVal(int low, int high) {
     return distrib(gen);
 }
 
-std::vector<sf::Sprite> resetPumpStack() {
+std::vector<sf::Sprite> resetPumpStack(int startingXPos) {
     std::vector<sf::Sprite> obstacleStack;
     for (int i = 0; i < 12; i++) {
         sf::Sprite obstacle(pumpkin);
-        obstacle.setPosition(sf::Vector2f(700, -50 + 70 * i));
+        obstacle.setPosition(sf::Vector2f(startingXPos, -50 + 70 * i));
         obstacle.setScale({ .2,.2 });
         obstacleStack.push_back(obstacle);
 
