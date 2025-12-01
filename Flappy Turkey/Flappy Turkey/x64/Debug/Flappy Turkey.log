@@ -6,61 +6,71 @@ C:\Dev\Flappy-Turkey\Flappy Turkey\External\include\SFML\System\Exception.hpp(41
       C:\Dev\Flappy-Turkey\Flappy Turkey\External\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(48,30): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(48,30): warning C4305:         with
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(48,30): warning C4305:         [
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(48,30): warning C4305:             T=float
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(48,30): warning C4305:         ]
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(48,27): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(48,27): warning C4305:         with
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(48,27): warning C4305:         [
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(48,27): warning C4305:             T=float
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(48,27): warning C4305:         ]
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(58,33): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(58,33): warning C4305:         with
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(58,33): warning C4305:         [
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(58,33): warning C4305:             T=float
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(58,33): warning C4305:         ]
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(58,29): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(58,29): warning C4305:         with
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(58,29): warning C4305:         [
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(58,29): warning C4305:             T=float
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(58,29): warning C4305:         ]
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(122,40): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(122,40): warning C4305:         with
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(122,40): warning C4305:         [
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(122,40): warning C4305:             T=float
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(122,40): warning C4305:         ]
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(122,35): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(122,35): warning C4305:         with
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(122,35): warning C4305:         [
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(122,35): warning C4305:             T=float
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(122,35): warning C4305:         ]
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(252,100): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(252,100): warning C4244:         with
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(252,100): warning C4244:         [
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(252,100): warning C4244:             T=float
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(252,100): warning C4244:         ]
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(275,61): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(275,61): warning C4244:         with
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(275,61): warning C4244:         [
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(275,61): warning C4244:             T=float
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(275,61): warning C4244:         ]
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(275,43): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(275,43): warning C4244:         with
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(275,43): warning C4244:         [
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(275,43): warning C4244:             T=float
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(275,43): warning C4244:         ]
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(276,32): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(276,32): warning C4305:         with
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(276,32): warning C4305:         [
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(276,32): warning C4305:             T=float
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(276,32): warning C4305:         ]
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(276,29): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(276,29): warning C4305:         with
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(276,29): warning C4305:         [
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(276,29): warning C4305:             T=float
-C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(276,29): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(49,30): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(49,30): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(49,30): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(49,30): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(49,30): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(49,27): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(49,27): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(49,27): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(49,27): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(49,27): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(59,33): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(59,33): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(59,33): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(59,33): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(59,33): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(59,29): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(59,29): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(59,29): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(59,29): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(59,29): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(124,40): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(124,40): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(124,40): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(124,40): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(124,40): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(124,35): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(124,35): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(124,35): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(124,35): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(124,35): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(169,45): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(169,45): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(169,45): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(169,45): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(169,45): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(169,41): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(169,41): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(169,41): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(169,41): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(169,41): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(257,100): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(257,100): warning C4244:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(257,100): warning C4244:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(257,100): warning C4244:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(257,100): warning C4244:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(277,61): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(277,61): warning C4244:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(277,61): warning C4244:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(277,61): warning C4244:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(277,61): warning C4244:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(277,43): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(277,43): warning C4244:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(277,43): warning C4244:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(277,43): warning C4244:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(277,43): warning C4244:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(278,32): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(278,32): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(278,32): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(278,32): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(278,32): warning C4305:         ]
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(278,29): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(278,29): warning C4305:         with
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(278,29): warning C4305:         [
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(278,29): warning C4305:             T=float
+C:\Dev\Flappy-Turkey\Flappy Turkey\main.cpp(278,29): warning C4305:         ]
   Flappy Turkey.vcxproj -> C:\Dev\Flappy-Turkey\Flappy Turkey\x64\Debug\Flappy Turkey.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

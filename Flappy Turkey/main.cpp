@@ -7,6 +7,7 @@
 #include <random>
 
 
+
 sf::Texture pumpkin;
 
 int main()
@@ -99,6 +100,7 @@ int main()
     bool checkT = false;
     std::cout << "Press 'R' to reset when you lose" << std::endl;
 
+
     // run the program as long as the window is open
     while (window.isOpen())
     {
@@ -110,7 +112,7 @@ int main()
                 window.close();
         }
 
-        
+
         window.clear(sf::Color::Black);
         window.draw(background);
         window.draw(score);
@@ -126,6 +128,9 @@ int main()
             low.move({ -30 * time, 0 });
             window.draw(low);
 
+        }
+        if (movingGrounds.size() > 5) {
+            movingGrounds.erase(movingGrounds.begin());
         }
 
         if (turkContact) { 
@@ -160,14 +165,14 @@ int main()
                 birdRotation = 0.f;
                 check = false;
                 checkT = false;
+                movingGround.setPosition({ 0,10 });
+                movingGround.setScale({ 2.2,2.2 });
+                movingGrounds = { movingGround };
                 turkSprite.setPosition({ 170,280 });
-                window.display();
                 turkContact = false;
 
-                
-
             }
-
+            window.display();
             continue;
         }
 
@@ -252,9 +257,6 @@ int main()
         turkSprite.setPosition(sf::Vector2f( 170.f, turkSprite.getPosition().y + TURKEY_VEL * time + .5*TURKEY_ACCEL*(time*time))); // x = x + v + .5at^2
         window.draw(turkSprite);
         // end the current frame
-
-
-        
 
         window.display();
     }
