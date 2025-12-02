@@ -24,6 +24,13 @@ int main()
     score.setPosition(sf::Vector2f(400 - 40, 100));
 
 
+    sf::Text reset(minecraftia_font);
+    reset.setString("Press 'R' to start!");
+    reset.setCharacterSize(71);
+    reset.setOutlineThickness(3.f);
+    reset.setPosition(sf::Vector2f(30, 300));
+
+
     std::vector<sf::Sprite> resetPumpStack(int startingXPos);
     int randomVal(int low, int high);
 
@@ -94,11 +101,11 @@ int main()
 
     float birdRotation = 0.f;
 
-    bool turkContact = false;
+    bool turkContact = true;
 
     bool check = false;
     bool checkT = false;
-    std::cout << "Press 'R' to reset when you lose" << std::endl;
+    //std::cout << "Press 'R' to reset when you lose" << std::endl;
 
 
     // run the program as long as the window is open
@@ -172,6 +179,7 @@ int main()
                 turkContact = false;
 
             }
+            window.draw(reset);
             window.display();
             continue;
         }
