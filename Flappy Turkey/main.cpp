@@ -21,7 +21,7 @@ int main()
     score.setString(std::to_string(turkScore));
     score.setCharacterSize(75);
     score.setOutlineThickness(2.f);
-    score.setPosition(sf::Vector2f(400 - 20, 100));
+    score.setPosition(sf::Vector2f(400 - 40, 100));
 
 
     std::vector<sf::Sprite> resetPumpStack(int startingXPos);
@@ -193,7 +193,7 @@ int main()
         }
 
         for (int p = 0; p < obstacleStack.size();p++) {
-            if (p > stackHigh || p < stackLow) {
+            if (p > stackHigh || p < stackLow) { // p > stackHigh || p < stackLow
                 if (turkSprite.getGlobalBounds().contains(obstacleStack[p].getGlobalBounds().getCenter())) {
                     turkContact = true;
                 }
