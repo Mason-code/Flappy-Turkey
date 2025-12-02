@@ -73,7 +73,7 @@ int main()
   
     std::vector<sf::Sprite> tempObstacleStack = resetPumpStack(1250);
     int stackLowT = randomVal(1, 6);
-    int stackHighT = stackLow + randomVal(3, 4);
+    int stackHighT = stackLowT + randomVal(3, 4);
 
     sf::Clock jumpTime;
     sf::Clock clock;
